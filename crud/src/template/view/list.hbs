@@ -1,0 +1,43 @@
+<style>
+    table{
+       border-collapse: collapse;
+       border: 2px solid;
+        margin: 5% auto;
+        width: 60vw;
+    }
+   td{
+        border: 1px solid goldenrod;
+         padding: 1%;
+         text-align: center;
+    }
+    a{
+        text-decoration: none;
+        list-style: none;
+        font-weight: 800;
+    }
+</style>
+<table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>emil</th>
+            <th>password1</th>
+            <th>password2</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.password1}}</td>
+            <td>{{this.password2}}</td>
+            <td>
+               <a href="/{{this._id}}"> update </a>
+               <a href="/delete/{{this._id}}"> delete </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

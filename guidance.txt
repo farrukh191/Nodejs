@@ -1,0 +1,97 @@
+https://www.youtube.com/watch?v=eOJeZ4CllNI&list=PLwGdqUZWnOp1P9xSsJg7g3AY0CUjs-WOa&index=6
+youtube channel study link
+
+for more study goto link given below
+https://docs.mongodb.com/manual/crud/
+
+when i create for new folder so i install setup in cmd  mongo m collection ka mtlb table hota h
+1) npm init -y
+then, install different library
+
+2) npm i express
+
+then, install nodemon that is install nodemon when i update run mutiple type when install nodemon no need run multiple time only one time run
+
+3) npm i nodemon
+
+now start mongo db
+
+4) npm i mongoose
+5) npm i hbs -------------> hbs stand for handle bar
+
+let's run this command
+
+4) for mongo
+
+5) for form validation
+
+npm i validators
+
+5) npm i dotenv
+
+dotenv file m hm apne password or secret key wagera ko rakhte h
+ye file bnane ka ye method h isko cmd m bnate h
+
+type null > config.env
+
+then show database write command
+
+5) show dbs
+agr mujhe maloom krna h knsa database active h currently to hm ye command run karenge
+6) db
+agr mujhe  database create krna h to m use likh kr us database ka name likhdonga
+7)use weldfez
+
+jb bhi database create krte h to table bhi create krte h table ko hm collection bhi kehte h
+agr m database call kronga to mujhe show nhi hoga jb tk  table create na or data add krne k lye bhi yahi command run krenge
+
+// farrukh collection ka name h //
+
+8) db.farrukh.insertOne({name:"reactjs",type:"front end", video:50, active:true})
+
+Or agr mujhe multiple data insert krna h to ye command run krenge
+
+9) db.farrukh.insertMany([{},{},{},{}])
+
+agr mujhe malom krna ho k table m kitne records h 
+
+10)db.farrukh.find().pretty() / OR db.collection_name.find().pretty()
+
+
+agr mujhe table/collection check krna h database k undr kitne collections h tu ye command run krenge
+
+11) show collections
+is collections k under kia data h maloom krna h tu ye command
+
+12) db.collection_name.find().pretty()
+
+13) update krne k liye ye command denge
+
+db.collection_name.updateOne({name:"Reactjs"},{$set {active:"false"}})
+
+14) agr sub ko ek sath update krna he to ye command denge
+
+db.collection_name.updateMany({name:"Reactjs"},{$set {active:"false"}})
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+install mongoose
+
+first we make folder E drive name mongoosejs then make other folder in mongoosejs
+
+setup install 
+1) npm init -y
+
+then install mongoose given command
+
+2) npm install mongoose
+
+jb bhi mujhe app.js file run krna he tu ye command likhonga jo folder directory ka h
+
+3) node  src/app.js
+
+
+agr mujhe bar bar code run k lye 'node src/app.js' likhna prta h tu is ke bjaye m ye bhi likh sakta ho
+'npm run dev' OR 'npm run start' or isme br br cmd ko run bhi nhi krna prta h mgr mujhe isklye package.json m script k undr ye 2 line likhna
+hoga         1)"start": "node src/app.js", 2) "dev": "nodemon src/app.js"
